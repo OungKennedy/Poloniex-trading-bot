@@ -1,6 +1,5 @@
 import pandas as pd
 import datetime
-import matplotlib.pyplot as plt
 import time as time
 import poloniex as polo
 import numpy as np
@@ -74,11 +73,12 @@ def trade(currency = None, timeframe = timeframeunix, buy_amount=100, sell_amoun
     elif current_signal == 0.0:
         print('no action taken for ' + str(currency) + ' at ' + str(datetime.datetime.now()))           
        
-
 while True:
+    #add currency pair, buy and sell amount below! e.g.
+    '''
     trade(currency='BTC_XMR', buy_amount=0.02, sell_amount=0.02)
     trade(currency='BTC_ETH', buy_amount=0.03, sell_amount=0.03)
-
+    '''
     time.sleep(1800)
     
     
